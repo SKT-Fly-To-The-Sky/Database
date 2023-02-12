@@ -8,7 +8,7 @@ services:
 #      MYSQL_ROOT_HOST=%
 #    user: "root"
     volumes:
-      - C:/Users/pch14/workspace/database/volume:/var/lib/mysql
+      - /mnt/c/Users/pch14/workspace/database/volume:/var/lib/mysql
     env_file:
       - ".env"
     ports:
