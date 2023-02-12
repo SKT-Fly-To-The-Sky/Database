@@ -1,0 +1,16 @@
+version: '3'
+services:
+  ftts_database:
+    image: mysql:8.0.32
+#    environment:
+#      MYSQL_ROOT_PASSWORD: "0000"
+#      MYSQL_DATABASE: ftts
+#      MYSQL_ROOT_HOST=%
+#    user: "root"
+    volumes:
+      - C:/Users/027/Documents/workspace/database/volume:/var/lib/mysql
+    env_file:
+      - ".env"
+    ports:
+      - "3307:3306"
+#    restart: always
