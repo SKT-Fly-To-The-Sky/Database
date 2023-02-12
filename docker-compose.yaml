@@ -12,5 +12,5 @@ services:
     env_file:
       - ".env"
     ports:
-      - "3307:3306"
+      - "10012:3306"
 #    restart: always
