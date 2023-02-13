@@ -9,7 +9,7 @@ services:
 #    user: "root"
     volumes:
 #      - /mnt/c/Users/pch14/workspace/database/volume:/var/lib/mysql
-      - ./volume:/var/lib/mysql
+      - ${PWD}/volume:/var/lib/mysql
     env_file:
       - ".env"
     ports:
