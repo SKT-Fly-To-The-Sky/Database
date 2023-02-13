@@ -9,10 +9,10 @@ services:
 #    user: "root"
     volumes:
 #      - /mnt/c/Users/pch14/workspace/database/volume:/var/lib/mysql
-      - ${PWD}/volume:/var/lib/mysql
+      - ./volume:/var/lib/mysql
     env_file:
       - ".env"
     ports:
       - "10012:3306"
-    command: ["chmod", "-R", "777", "/var/lib/mysql"]
-    restart: always
+#    command: ["chmod", "-R", "777", "/var/lib/mysql"]
+#    restart: always
